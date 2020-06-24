@@ -3,4 +3,4 @@ Attendence Assistant app helps students track their attendance. This is only a f
 
 App uses - SQLite Database, ListViews, ListAdapters, CursorAdapters, GoogleMaps API, LocationManager and Manymore! The app was coded in 2017 so android features used are according to that
 
-The screenshots of app's ui can be viewed here: https://bit.ly/AttendanceAssistantScreenshots
+The screenshots of app's ui can be viewed here: https://bit.ly/AttendanceAppScreenshots
