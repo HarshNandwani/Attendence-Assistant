@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <FrameLayout
+        android:id="@+id/settingsFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/General"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="18dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="6dp"
+                    android:text="General"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="2dp"
+                        android:text="Profile"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="20dp"
+                        android:paddingBottom="4dp"
+                        android:text="Change your profile details"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/collegeDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="2dp"
+                        android:text="Set College Details"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="20dp"
+                        android:paddingBottom="4dp"
+                        android:text="Set your college's Timings and classes per day"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/setAttendance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/textViewx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="2dp"
+                        android:text="Set Minimum Attendance"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textViewy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="20dp"
+                        android:paddingBottom="4dp"
+                        android:text="Set the attendance you need to maintain"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/assistantNoti"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="12dp"
+                    android:paddingBottom="8dp">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView23"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="20dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="2dp"
+                            android:text="Assistant Notifications"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/textView29"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="20dp"
+                            android:paddingBottom="8dp"
+                            android:text="Turn assistant notifications on/off"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <Switch
+                        android:id="@+id/notiSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:paddingEnd="20dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider"
+                android:padding="6dp" />
+
+            <LinearLayout
+                android:id="@+id/Privacy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="4dp">
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="18dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="6dp"
+                    android:text="Privacy"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="2dp"
+                        android:text="Know how we use your location"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="20dp"
+                        android:text="privacy"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

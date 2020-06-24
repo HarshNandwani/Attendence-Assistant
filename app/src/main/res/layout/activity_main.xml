@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:circular="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/activityBackground"
+    android:layout_gravity="center">
+
+    <com.hntechs.attendanceassistant.CircularProgressBar
+        android:id="@+id/cpb"
+        style="@style/Widget.ProgressBar.Holo.CircularProgressBar"
+        android:layout_width="208dp"
+        android:layout_height="204dp"
+        android:layout_marginTop="42dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        circular:subtitle="subtitle"
+        circular:title="Title"
+        app:cpb_strokeWidth="30"
+        app:cpb_backgroundStrokeWidth="15"/>
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:columnCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cpb"
+        app:rowCount="2">
+
+        <LinearLayout
+            android:id="@+id/updateAttendance"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/layout_bg"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:padding="15dp"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="0"
+            app:layout_rowWeight="1">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:foreground="@drawable/icon_update_button"
+                android:src="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:paddingTop="6dp"
+                android:text="@string/update_attendance"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/viewAttendance"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/layout_bg"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:padding="15dp"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_row="0"
+            app:layout_rowWeight="1">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:foreground="@drawable/icon_view_button"
+                android:src="@android:color/holo_green_dark" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:paddingTop="7dp"
+                android:text="@string/view_nattendance"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/updateAsBatch"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/layout_bg"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:padding="15dp"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="1"
+            app:layout_rowWeight="1"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:foreground="@drawable/icon_batch_button"
+                android:src="@color/batch_btn_color" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:paddingTop="7dp"
+                android:text="@string/update_as_batch"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setLocation"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/layout_bg"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:padding="15dp"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_row="1"
+            app:layout_rowWeight="1">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:foreground="@drawable/icon_setlocation_button"
+                android:src="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:paddingTop="7dp"
+                android:text="@string/set_loaction"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/notUpdatedTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Click to Update\nAttendance"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/cpb"
+        app:layout_constraintEnd_toEndOf="@+id/cpb"
+        app:layout_constraintStart_toStartOf="@+id/cpb"
+        app:layout_constraintTop_toTopOf="@+id/cpb" />
+
+    <ImageView
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        circular:srcCompat="@drawable/ic_settings" />
+
+
+</android.support.constraint.ConstraintLayout>
